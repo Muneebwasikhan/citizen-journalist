@@ -9,8 +9,9 @@ export default class MyText extends React.Component {
 
   async componentDidMount() {
     await Font.loadAsync({
-      "Montserrat-Bold": require("../assets/fonts/Montserrat/Montserrat-Bold.ttf"),
-      "Montserrat-Regular": require("../assets/fonts/Montserrat/Montserrat-Regular.ttf")
+      "myFont-Bold": require("../assets/fonts/Montserrat/Montserrat-Bold.ttf"),
+      "myFont-Regular": require("../assets/fonts/Montserrat/Montserrat-Regular.ttf"),
+      "myFont-SemiBold": require("../assets/fonts/Montserrat/Montserrat-SemiBold.ttf")
     });
 
     this.setState({ fontLoaded: true });
