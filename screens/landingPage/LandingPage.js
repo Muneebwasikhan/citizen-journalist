@@ -3,6 +3,7 @@ import { StyleSheet, View, Dimensions, TouchableOpacity } from "react-native";
 import { LinearGradient, Font } from "expo";
 import MyText from "../../components/MyText";
 import { Input, Button } from "react-native-elements";
+import NewsFeedCard from '../../components/NewsFeedCard'
 
 export default class LandingPage extends React.Component {
   render() {
@@ -25,6 +26,8 @@ export default class LandingPage extends React.Component {
         >
           Newsfeed
         </MyText>
+
+        <NewsFeedCard />
        
       </View>
     );
